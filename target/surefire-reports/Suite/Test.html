@@ -1,0 +1,115 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>7/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Nov 10 18:25:40 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>37 seconds (37113 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.user.GetTests.GetUserTestMethod3()'><b>GetUserTestMethod3</b><br>Test class: tests.user.GetTests<br>Test method: Validate that API should return a response payload ie. Non-empty response body and response header</td>
+<td></td>
+<td>2</td>
+<td>tests.user.GetTests@4d5d943d</td></tr>
+<tr>
+<td title='tests.user.GetTests.GetUserTestMethod5()'><b>GetUserTestMethod5</b><br>Test class: tests.user.GetTests<br>Test method: Validate that API should should adhere to Response structure as per data model mentioned in API Spec or API Doc.- JSON SCHEMA VALIDATION</td>
+<td></td>
+<td>4</td>
+<td>tests.user.GetTests@4d5d943d</td></tr>
+<tr>
+<td title='tests.user.GetTests.GetUserTestMethod7()'><b>GetUserTestMethod7</b><br>Test class: tests.user.GetTests<br>Test method: Valdiate that API should return response headers as per the spec</td>
+<td></td>
+<td>7</td>
+<td>tests.user.GetTests@4d5d943d</td></tr>
+<tr>
+<td title='tests.user.GetTests.GetUserTestMethod1()'><b>GetUserTestMethod1</b><br>Test class: tests.user.GetTests<br>Test method: Validate that API should return API status code within 2XX series</td>
+<td></td>
+<td>9</td>
+<td>tests.user.GetTests@4d5d943d</td></tr>
+<tr>
+<td title='tests.user.GetTests.GetUserTestMethod6()'><b>GetUserTestMethod6</b><br>Test class: tests.user.GetTests<br>Test method: Validate that API should return response body with details of all existing users</td>
+<td></td>
+<td>4</td>
+<td>tests.user.GetTests@4d5d943d</td></tr>
+<tr>
+<td title='tests.user.GetTests.GetUserTestMethod4()'><b>GetUserTestMethod4</b><br>Test class: tests.user.GetTests<br>Test method: Validate that API should return response of type = JSON</td>
+<td></td>
+<td>2</td>
+<td>tests.user.GetTests@4d5d943d</td></tr>
+<tr>
+<td title='tests.user.GetTests.GetUserTestMethod2()'><b>GetUserTestMethod2</b><br>Test class: tests.user.GetTests<br>Test method: Validate that API should return API status code as 200</td>
+<td></td>
+<td>6</td>
+<td>tests.user.GetTests@4d5d943d</td></tr>
+</table><p>
+</body>
+</html>

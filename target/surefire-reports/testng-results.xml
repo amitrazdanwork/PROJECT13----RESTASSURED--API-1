@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-11-10T18:25:40 IST" name="Suite" finished-at="2024-11-10T18:26:17 IST" duration-ms="37113">
+    <groups>
+      <group name="USER - GET API">
+        <method signature="GetTests.GetUserTestMethod1()[pri:8, instance:tests.user.GetTests@4d5d943d]" name="GetUserTestMethod1" class="tests.user.GetTests"/>
+        <method signature="GetTests.GetUserTestMethod2()[pri:9, instance:tests.user.GetTests@4d5d943d]" name="GetUserTestMethod2" class="tests.user.GetTests"/>
+        <method signature="GetTests.GetUserTestMethod3()[pri:10, instance:tests.user.GetTests@4d5d943d]" name="GetUserTestMethod3" class="tests.user.GetTests"/>
+        <method signature="GetTests.GetUserTestMethod4()[pri:11, instance:tests.user.GetTests@4d5d943d]" name="GetUserTestMethod4" class="tests.user.GetTests"/>
+        <method signature="GetTests.GetUserTestMethod5()[pri:12, instance:tests.user.GetTests@4d5d943d]" name="GetUserTestMethod5" class="tests.user.GetTests"/>
+        <method signature="GetTests.GetUserTestMethod6()[pri:13, instance:tests.user.GetTests@4d5d943d]" name="GetUserTestMethod6" class="tests.user.GetTests"/>
+        <method signature="GetTests.GetUserTestMethod7()[pri:14, instance:tests.user.GetTests@4d5d943d]" name="GetUserTestMethod7" class="tests.user.GetTests"/>
+      </group> <!-- USER - GET API -->
+    </groups>
+    <test started-at="2024-11-10T18:25:40 IST" name="Test" finished-at="2024-11-10T18:26:17 IST" duration-ms="37113">
+      <class name="tests.user.GetTests">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:tests.user.GetTests@4d5d943d]" started-at="2024-11-10T18:25:40 IST" name="Setup" finished-at="2024-11-10T18:25:40 IST" duration-ms="373" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="GetUserTestMethod1()[pri:8, instance:tests.user.GetTests@4d5d943d]" started-at="2024-11-10T18:25:40 IST" name="GetUserTestMethod1" description="Validate that API should return API status code within 2XX series" finished-at="2024-11-10T18:25:49 IST" duration-ms="9009" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetUserTestMethod1 -->
+        <test-method signature="GetUserTestMethod2()[pri:9, instance:tests.user.GetTests@4d5d943d]" started-at="2024-11-10T18:25:49 IST" name="GetUserTestMethod2" description="Validate that API should return API status code as 200" finished-at="2024-11-10T18:25:56 IST" duration-ms="6107" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetUserTestMethod2 -->
+        <test-method signature="GetUserTestMethod3()[pri:10, instance:tests.user.GetTests@4d5d943d]" started-at="2024-11-10T18:25:56 IST" name="GetUserTestMethod3" description="Validate that API should return a response payload ie. Non-empty response body and response header" finished-at="2024-11-10T18:25:58 IST" duration-ms="2417" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetUserTestMethod3 -->
+        <test-method signature="GetUserTestMethod4()[pri:11, instance:tests.user.GetTests@4d5d943d]" started-at="2024-11-10T18:25:58 IST" name="GetUserTestMethod4" description="Validate that API should return response of type = JSON" finished-at="2024-11-10T18:26:01 IST" duration-ms="2937" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetUserTestMethod4 -->
+        <test-method signature="GetUserTestMethod5()[pri:12, instance:tests.user.GetTests@4d5d943d]" started-at="2024-11-10T18:26:01 IST" name="GetUserTestMethod5" description="Validate that API should should adhere to Response structure as per data model mentioned in API Spec or API Doc.- JSON SCHEMA VALIDATION" finished-at="2024-11-10T18:26:05 IST" duration-ms="4196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetUserTestMethod5 -->
+        <test-method signature="GetUserTestMethod6()[pri:13, instance:tests.user.GetTests@4d5d943d]" started-at="2024-11-10T18:26:05 IST" name="GetUserTestMethod6" description="Validate that API should return response body with details of all existing users" finished-at="2024-11-10T18:26:10 IST" duration-ms="4489" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetUserTestMethod6 -->
+        <test-method signature="GetUserTestMethod7()[pri:14, instance:tests.user.GetTests@4d5d943d]" started-at="2024-11-10T18:26:10 IST" name="GetUserTestMethod7" description="Valdiate that API should return response headers as per the spec" finished-at="2024-11-10T18:26:17 IST" duration-ms="7054" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetUserTestMethod7 -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:tests.user.GetTests@4d5d943d]" started-at="2024-11-10T18:26:17 IST" name="Teardown" finished-at="2024-11-10T18:26:17 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+      </class> <!-- tests.user.GetTests -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
