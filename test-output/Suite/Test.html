@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>24/4/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Nov 10 19:08:33 IST 2024</td>
+<td>Started on:</td><td>Fri Apr 11 22:54:11 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>143 seconds (143241 ms)</td>
+<tr><td>Total time:</td><td>97 seconds (97799 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,15 +76,23 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.user.DeleteTests.DeleteUserTestMethod1()'><b>DeleteUserTestMethod1</b><br>Test class: tests.user.DeleteTests<br>Test method: Validate that API should return API status code within 2XX series</td>
-<td><div><pre>java.lang.AssertionError: Assertion 1
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:26)
-	at tests.user.DeleteTests.DeleteUserTestMethod1(DeleteTests.java:55)
+<td title='tests.user.PostTests.PostUserTestMethod5()'><b>PostUserTestMethod5</b><br>Test class: tests.user.PostTests<br>Test method: Validate that API should should adhere to Response structure as per data model mentioned in API Spec or API Doc.- JSON SCHEMA VALIDATION</td>
+<td><div><pre>java.lang.IllegalArgumentException: Schema to use cannot be null
+	at io.restassured.module.jsv.JsonSchemaValidator.validateSchemaIsNotNull(JsonSchemaValidator.java:270)
+	at io.restassured.module.jsv.JsonSchemaValidator.access$300(JsonSchemaValidator.java:75)
+	at io.restassured.module.jsv.JsonSchemaValidator$JsonSchemaValidatorFactory.create(JsonSchemaValidator.java:281)
+	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema(JsonSchemaValidator.java:166)
+	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath(JsonSchemaValidator.java:117)
+	at tests.user.PostTests.PostUserTestMethod5(PostTests.java:107)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1243098602", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1243098602'><pre>java.lang.AssertionError: Assertion 1
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:26)
-	at tests.user.DeleteTests.DeleteUserTestMethod1(DeleteTests.java:55)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace12884933", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace12884933'><pre>java.lang.IllegalArgumentException: Schema to use cannot be null
+	at io.restassured.module.jsv.JsonSchemaValidator.validateSchemaIsNotNull(JsonSchemaValidator.java:270)
+	at io.restassured.module.jsv.JsonSchemaValidator.access$300(JsonSchemaValidator.java:75)
+	at io.restassured.module.jsv.JsonSchemaValidator$JsonSchemaValidatorFactory.create(JsonSchemaValidator.java:281)
+	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema(JsonSchemaValidator.java:166)
+	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath(JsonSchemaValidator.java:117)
+	at tests.user.PostTests.PostUserTestMethod5(PostTests.java:107)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -112,8 +120,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>5</td>
-<td>tests.user.DeleteTests@158a8276</td></tr>
+<td>1</td>
+<td>tests.user.PostTests@13b6aecc</td></tr>
 <tr>
 <td title='tests.user.GetTests.GetUserTestMethod2()'><b>GetUserTestMethod2</b><br>Test class: tests.user.GetTests<br>Test method: Validate that API should return API status code as 200</td>
 <td><div><pre>java.lang.AssertionError: 
@@ -123,8 +131,8 @@ Expected: is &lt;200&gt;
 	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
 	at tests.user.GetTests.GetUserTestMethod2(GetTests.java:67)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1809261025", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1809261025'><pre>java.lang.AssertionError: 
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1261213183", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1261213183'><pre>java.lang.AssertionError: 
 Expected: is &lt;200&gt;
      but: was &lt;404&gt;
 	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
@@ -157,26 +165,37 @@ Expected: is &lt;200&gt;
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>5</td>
+<td>2</td>
 <td>tests.user.GetTests@7d8704ef</td></tr>
 <tr>
 <td title='tests.user.DeleteTests.DeleteUserTestMethod5()'><b>DeleteUserTestMethod5</b><br>Test class: tests.user.DeleteTests<br>Test method: Validate that API should should adhere to Response structure as per data model mentioned in API Spec or API Doc.- JSON SCHEMA VALIDATION</td>
-<td><div><pre>java.lang.IllegalArgumentException: Schema to use cannot be null
-	at io.restassured.module.jsv.JsonSchemaValidator.validateSchemaIsNotNull(JsonSchemaValidator.java:270)
-	at io.restassured.module.jsv.JsonSchemaValidator.access$300(JsonSchemaValidator.java:75)
-	at io.restassured.module.jsv.JsonSchemaValidator$JsonSchemaValidatorFactory.create(JsonSchemaValidator.java:281)
-	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema(JsonSchemaValidator.java:166)
-	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath(JsonSchemaValidator.java:117)
-	at tests.user.DeleteTests.DeleteUserTestMethod5(DeleteTests.java:102)
+<td><div><pre>io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1002)
+	at io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:967)
+	at io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1047)
+	at io.restassured.path.json.JsonPath.toJsonString(JsonPath.java:1064)
+	at io.restassured.path.json.JsonPath.prettify(JsonPath.java:685)
+	at io.restassured.path.json.JsonPath.prettyPrint(JsonPath.java:700)
+	at tests.user.DeleteTests.DeleteUserTestMethod5(DeleteTests.java:105)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace943853700", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace943853700'><pre>java.lang.IllegalArgumentException: Schema to use cannot be null
-	at io.restassured.module.jsv.JsonSchemaValidator.validateSchemaIsNotNull(JsonSchemaValidator.java:270)
-	at io.restassured.module.jsv.JsonSchemaValidator.access$300(JsonSchemaValidator.java:75)
-	at io.restassured.module.jsv.JsonSchemaValidator$JsonSchemaValidatorFactory.create(JsonSchemaValidator.java:281)
-	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema(JsonSchemaValidator.java:166)
-	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath(JsonSchemaValidator.java:117)
-	at tests.user.DeleteTests.DeleteUserTestMethod5(DeleteTests.java:102)
+Caused by: java.lang.IllegalArgumentException: The JSON input text should neither be null nor empty.
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:80)
+	at io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:965)
+	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1000)
+	... 32 more
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace597092065", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace597092065'><pre>io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1002)
+	at io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:967)
+	at io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1047)
+	at io.restassured.path.json.JsonPath.toJsonString(JsonPath.java:1064)
+	at io.restassured.path.json.JsonPath.prettify(JsonPath.java:685)
+	at io.restassured.path.json.JsonPath.prettyPrint(JsonPath.java:700)
+	at tests.user.DeleteTests.DeleteUserTestMethod5(DeleteTests.java:105)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -203,19 +222,32 @@ Expected: is &lt;200&gt;
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: java.lang.IllegalArgumentException: The JSON input text should neither be null nor empty.
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:80)
+	at io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:965)
+	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1000)
+	... 32 more
 </pre></div></td>
-<td>6</td>
+<td>3</td>
 <td>tests.user.DeleteTests@158a8276</td></tr>
 <tr>
-<td title='tests.user.GetTests.GetUserTestMethod1()'><b>GetUserTestMethod1</b><br>Test class: tests.user.GetTests<br>Test method: Validate that API should return API status code within 2XX series</td>
+<td title='tests.user.DeleteTests.DeleteUserTestMethod1()'><b>DeleteUserTestMethod1</b><br>Test class: tests.user.DeleteTests<br>Test method: Validate that API should return API status code within 2XX series</td>
 <td><div><pre>java.lang.AssertionError: Assertion 1
 	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:26)
-	at tests.user.GetTests.GetUserTestMethod1(GetTests.java:58)
+	at tests.user.DeleteTests.DeleteUserTestMethod1(DeleteTests.java:56)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace958267010", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace958267010'><pre>java.lang.AssertionError: Assertion 1
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1395280084", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1395280084'><pre>java.lang.AssertionError: Assertion 1
 	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:26)
-	at tests.user.GetTests.GetUserTestMethod1(GetTests.java:58)
+	at tests.user.DeleteTests.DeleteUserTestMethod1(DeleteTests.java:56)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -243,8 +275,8 @@ Expected: is &lt;200&gt;
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>6</td>
-<td>tests.user.GetTests@7d8704ef</td></tr>
+<td>5</td>
+<td>tests.user.DeleteTests@158a8276</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -255,27 +287,82 @@ Expected: is &lt;200&gt;
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.user.DeleteTests.DeleteUserTestMethod7()'><b>DeleteUserTestMethod7</b><br>Test class: tests.user.DeleteTests<br>Test method: Valdiate that API should return response headers as per the spec</td>
-<td></td>
-<td>3</td>
-<td>tests.user.DeleteTests@158a8276</td></tr>
-<tr>
-<td title='tests.user.PutTests.PutUserTestMethod7()'><b>PutUserTestMethod7</b><br>Test class: tests.user.PutTests<br>Test method: Validate that API should return response headers as per the spec</td>
+<td title='tests.user.DeleteTests.DeleteUserTestMethod6()'><b>DeleteUserTestMethod6</b><br>Test class: tests.user.DeleteTests<br>Test method: Valdiate that API should return response body with details of all existing users</td>
 <td></td>
 <td>4</td>
+<td>tests.user.DeleteTests@158a8276</td></tr>
+<tr>
+<td title='tests.user.GetTests.GetUserTestMethod4()'><b>GetUserTestMethod4</b><br>Test class: tests.user.GetTests<br>Test method: Validate that API should return response of type = JSON</td>
+<td></td>
+<td>3</td>
+<td>tests.user.GetTests@7d8704ef</td></tr>
+<tr>
+<td title='tests.user.GetTests.GetUserTestMethod5()'><b>GetUserTestMethod5</b><br>Test class: tests.user.GetTests<br>Test method: Validate that API should should adhere to Response structure as per data model mentioned in API Spec or API Doc.- JSON SCHEMA VALIDATION</td>
+<td></td>
+<td>2</td>
+<td>tests.user.GetTests@7d8704ef</td></tr>
+<tr>
+<td title='tests.user.PutTests.PutUserTestMethod3()'><b>PutUserTestMethod3</b><br>Test class: tests.user.PutTests<br>Test method: Validate that API should return a response payload ie. Non-empty response body and response header</td>
+<td></td>
+<td>8</td>
 <td>tests.user.PutTests@305b7c14</td></tr>
 <tr>
-<td title='tests.user.PostTests.PostUserTestMethod5()'><b>PostUserTestMethod5</b><br>Test class: tests.user.PostTests<br>Test method: Validate that API should should adhere to Response structure as per data model mentioned in API Spec or API Doc.- JSON SCHEMA VALIDATION</td>
+<td title='tests.user.GetTests.GetUserTestMethod7()'><b>GetUserTestMethod7</b><br>Test class: tests.user.GetTests<br>Test method: Valdiate that API should return response headers as per the spec</td>
+<td></td>
+<td>3</td>
+<td>tests.user.GetTests@7d8704ef</td></tr>
+<tr>
+<td title='tests.user.PostTests.PostUserTestMethod6()'><b>PostUserTestMethod6</b><br>Test class: tests.user.PostTests<br>Test method: Valdiate that API should return response body as per the req spec</td>
+<td></td>
+<td>1</td>
+<td>tests.user.PostTests@13b6aecc</td></tr>
+<tr>
+<td title='tests.user.GetTests.GetUserTestMethod1()'><b>GetUserTestMethod1</b><br>Test class: tests.user.GetTests<br>Test method: Validate that API should return API status code within 2XX series</td>
+<td></td>
+<td>2</td>
+<td>tests.user.GetTests@7d8704ef</td></tr>
+<tr>
+<td title='tests.user.PostTests.PostUserTestMethod4()'><b>PostUserTestMethod4</b><br>Test class: tests.user.PostTests<br>Test method: Validate that API should return response of type = JSON</td>
 <td></td>
 <td>2</td>
 <td>tests.user.PostTests@13b6aecc</td></tr>
 <tr>
-<td title='tests.user.DeleteTests.DeleteUserTestMethod3()'><b>DeleteUserTestMethod3</b><br>Test class: tests.user.DeleteTests<br>Test method: Validate that API should return a response payload ie. Non-empty response body and response header</td>
+<td title='tests.user.DeleteTests.DeleteUserTestMethod2()'><b>DeleteUserTestMethod2</b><br>Test class: tests.user.DeleteTests<br>Test method: Validate that API should return API status code as 200</td>
 <td></td>
-<td>6</td>
+<td>4</td>
 <td>tests.user.DeleteTests@158a8276</td></tr>
 <tr>
-<td title='tests.user.PutTests.PutUserTestMethod4()'><b>PutUserTestMethod4</b><br>Test class: tests.user.PutTests<br>Test method: Validate that API should return response of type = JSON</td>
+<td title='tests.user.PostTests.PostUserTestMethod7()'><b>PostUserTestMethod7</b><br>Test class: tests.user.PostTests<br>Test method: Valdiate that API should return response headers as per the req spec</td>
+<td></td>
+<td>1</td>
+<td>tests.user.PostTests@13b6aecc</td></tr>
+<tr>
+<td title='tests.user.PutTests.PutUserTestMethod1()'><b>PutUserTestMethod1</b><br>Test class: tests.user.PutTests<br>Test method: Validate that API should return API status code within 2XX series</td>
+<td></td>
+<td>8</td>
+<td>tests.user.PutTests@305b7c14</td></tr>
+<tr>
+<td title='tests.user.PutTests.PutUserTestMethod7()'><b>PutUserTestMethod7</b><br>Test class: tests.user.PutTests<br>Test method: Validate that API should return response headers as per the spec</td>
+<td></td>
+<td>2</td>
+<td>tests.user.PutTests@305b7c14</td></tr>
+<tr>
+<td title='tests.user.DeleteTests.DeleteUserTestMethod3()'><b>DeleteUserTestMethod3</b><br>Test class: tests.user.DeleteTests<br>Test method: Validate that API should return a response payload ie. Non-empty response body and response header</td>
+<td></td>
+<td>3</td>
+<td>tests.user.DeleteTests@158a8276</td></tr>
+<tr>
+<td title='tests.user.DeleteTests.DeleteUserTestMethod4()'><b>DeleteUserTestMethod4</b><br>Test class: tests.user.DeleteTests<br>Test method: Validate that API should return response of type = JSON</td>
+<td></td>
+<td>2</td>
+<td>tests.user.DeleteTests@158a8276</td></tr>
+<tr>
+<td title='tests.user.DeleteTests.DeleteUserTestMethod7()'><b>DeleteUserTestMethod7</b><br>Test class: tests.user.DeleteTests<br>Test method: Valdiate that API should return response headers as per the spec</td>
+<td></td>
+<td>4</td>
+<td>tests.user.DeleteTests@158a8276</td></tr>
+<tr>
+<td title='tests.user.PutTests.PutUserTestMethod5()'><b>PutUserTestMethod5</b><br>Test class: tests.user.PutTests<br>Test method: Validate that API should should adhere to Response structure as per data model mentioned in API Spec or API Doc.- JSON SCHEMA VALIDATION</td>
 <td></td>
 <td>3</td>
 <td>tests.user.PutTests@305b7c14</td></tr>
@@ -285,94 +372,39 @@ Expected: is &lt;200&gt;
 <td>1</td>
 <td>tests.user.PostTests@13b6aecc</td></tr>
 <tr>
-<td title='tests.user.DeleteTests.DeleteUserTestMethod4()'><b>DeleteUserTestMethod4</b><br>Test class: tests.user.DeleteTests<br>Test method: Validate that API should return response of type = JSON</td>
-<td></td>
-<td>4</td>
-<td>tests.user.DeleteTests@158a8276</td></tr>
-<tr>
-<td title='tests.user.PutTests.PutUserTestMethod6()'><b>PutUserTestMethod6</b><br>Test class: tests.user.PutTests<br>Test method: Valdiate that API should return response body with details of all existing users</td>
-<td></td>
-<td>7</td>
-<td>tests.user.PutTests@305b7c14</td></tr>
-<tr>
-<td title='tests.user.GetTests.GetUserTestMethod6()'><b>GetUserTestMethod6</b><br>Test class: tests.user.GetTests<br>Test method: Validate that API should return response body with details of all existing users</td>
-<td></td>
-<td>7</td>
-<td>tests.user.GetTests@7d8704ef</td></tr>
-<tr>
-<td title='tests.user.PutTests.PutUserTestMethod2()'><b>PutUserTestMethod2</b><br>Test class: tests.user.PutTests<br>Test method: Validate that API should return API status code as 200</td>
-<td></td>
-<td>4</td>
-<td>tests.user.PutTests@305b7c14</td></tr>
-<tr>
-<td title='tests.user.GetTests.GetUserTestMethod4()'><b>GetUserTestMethod4</b><br>Test class: tests.user.GetTests<br>Test method: Validate that API should return response of type = JSON</td>
-<td></td>
-<td>4</td>
-<td>tests.user.GetTests@7d8704ef</td></tr>
-<tr>
-<td title='tests.user.PostTests.PostUserTestMethod4()'><b>PostUserTestMethod4</b><br>Test class: tests.user.PostTests<br>Test method: Validate that API should return response of type = JSON</td>
-<td></td>
-<td>2</td>
-<td>tests.user.PostTests@13b6aecc</td></tr>
-<tr>
-<td title='tests.user.PutTests.PutUserTestMethod1()'><b>PutUserTestMethod1</b><br>Test class: tests.user.PutTests<br>Test method: Validate that API should return API status code within 2XX series</td>
-<td></td>
-<td>7</td>
-<td>tests.user.PutTests@305b7c14</td></tr>
-<tr>
-<td title='tests.user.DeleteTests.DeleteUserTestMethod6()'><b>DeleteUserTestMethod6</b><br>Test class: tests.user.DeleteTests<br>Test method: Valdiate that API should return response body with details of all existing users</td>
-<td></td>
-<td>6</td>
-<td>tests.user.DeleteTests@158a8276</td></tr>
-<tr>
-<td title='tests.user.PostTests.PostUserTestMethod6()'><b>PostUserTestMethod6</b><br>Test class: tests.user.PostTests<br>Test method: Valdiate that API should return response body as per the req spec</td>
-<td></td>
-<td>2</td>
-<td>tests.user.PostTests@13b6aecc</td></tr>
-<tr>
-<td title='tests.user.DeleteTests.DeleteUserTestMethod2()'><b>DeleteUserTestMethod2</b><br>Test class: tests.user.DeleteTests<br>Test method: Validate that API should return API status code as 200</td>
-<td></td>
-<td>8</td>
-<td>tests.user.DeleteTests@158a8276</td></tr>
-<tr>
-<td title='tests.user.PutTests.PutUserTestMethod5()'><b>PutUserTestMethod5</b><br>Test class: tests.user.PutTests<br>Test method: Validate that API should should adhere to Response structure as per data model mentioned in API Spec or API Doc.- JSON SCHEMA VALIDATION</td>
-<td></td>
-<td>10</td>
-<td>tests.user.PutTests@305b7c14</td></tr>
-<tr>
-<td title='tests.user.PutTests.PutUserTestMethod3()'><b>PutUserTestMethod3</b><br>Test class: tests.user.PutTests<br>Test method: Validate that API should return a response payload ie. Non-empty response body and response header</td>
-<td></td>
-<td>5</td>
-<td>tests.user.PutTests@305b7c14</td></tr>
-<tr>
 <td title='tests.user.PostTests.PostUserTestMethod1()'><b>PostUserTestMethod1</b><br>Test class: tests.user.PostTests<br>Test method: Validate that API should return API status code within 2XX series</td>
 <td></td>
 <td>2</td>
 <td>tests.user.PostTests@13b6aecc</td></tr>
 <tr>
-<td title='tests.user.GetTests.GetUserTestMethod7()'><b>GetUserTestMethod7</b><br>Test class: tests.user.GetTests<br>Test method: Valdiate that API should return response headers as per the spec</td>
+<td title='tests.user.PutTests.PutUserTestMethod6()'><b>PutUserTestMethod6</b><br>Test class: tests.user.PutTests<br>Test method: Valdiate that API should return response body with details of all existing users</td>
 <td></td>
 <td>5</td>
-<td>tests.user.GetTests@7d8704ef</td></tr>
+<td>tests.user.PutTests@305b7c14</td></tr>
+<tr>
+<td title='tests.user.PutTests.PutUserTestMethod4()'><b>PutUserTestMethod4</b><br>Test class: tests.user.PutTests<br>Test method: Validate that API should return response of type = JSON</td>
+<td></td>
+<td>2</td>
+<td>tests.user.PutTests@305b7c14</td></tr>
+<tr>
+<td title='tests.user.PutTests.PutUserTestMethod2()'><b>PutUserTestMethod2</b><br>Test class: tests.user.PutTests<br>Test method: Validate that API should return API status code as 200</td>
+<td></td>
+<td>6</td>
+<td>tests.user.PutTests@305b7c14</td></tr>
 <tr>
 <td title='tests.user.PostTests.PostUserTestMethod3()'><b>PostUserTestMethod3</b><br>Test class: tests.user.PostTests<br>Test method: Validate that API should return a response payload i.e. Non-empty response body and response header</td>
 <td></td>
-<td>2</td>
-<td>tests.user.PostTests@13b6aecc</td></tr>
-<tr>
-<td title='tests.user.GetTests.GetUserTestMethod5()'><b>GetUserTestMethod5</b><br>Test class: tests.user.GetTests<br>Test method: Validate that API should should adhere to Response structure as per data model mentioned in API Spec or API Doc.- JSON SCHEMA VALIDATION</td>
-<td></td>
-<td>4</td>
-<td>tests.user.GetTests@7d8704ef</td></tr>
-<tr>
-<td title='tests.user.PostTests.PostUserTestMethod7()'><b>PostUserTestMethod7</b><br>Test class: tests.user.PostTests<br>Test method: Valdiate that API should return response headers as per the req spec</td>
-<td></td>
-<td>2</td>
+<td>1</td>
 <td>tests.user.PostTests@13b6aecc</td></tr>
 <tr>
 <td title='tests.user.GetTests.GetUserTestMethod3()'><b>GetUserTestMethod3</b><br>Test class: tests.user.GetTests<br>Test method: Validate that API should return a response payload ie. Non-empty response body and response header</td>
 <td></td>
-<td>6</td>
+<td>2</td>
+<td>tests.user.GetTests@7d8704ef</td></tr>
+<tr>
+<td title='tests.user.GetTests.GetUserTestMethod6()'><b>GetUserTestMethod6</b><br>Test class: tests.user.GetTests<br>Test method: Validate that API should return response body with details of all existing users</td>
+<td></td>
+<td>3</td>
 <td>tests.user.GetTests@7d8704ef</td></tr>
 </table><p>
 </body>

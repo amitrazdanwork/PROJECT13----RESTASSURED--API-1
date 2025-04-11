@@ -6,6 +6,13 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="tests.user.PostTests">
+        <methods>
+          <include name="Teardown"/>
+          <include name="PostUserTestMethod5"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- tests.user.PostTests -->
       <class name="tests.user.DeleteTests">
         <methods>
           <include name="Teardown"/>
@@ -16,7 +23,6 @@
       </class> <!-- tests.user.DeleteTests -->
       <class name="tests.user.GetTests">
         <methods>
-          <include name="GetUserTestMethod1"/>
           <include name="Setup"/>
           <include name="GetUserTestMethod2"/>
           <include name="Teardown"/>

@@ -2,8 +2,34 @@
 <testng-results ignored="0" total="28" passed="24" failed="4" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-10T19:08:33 IST" name="Suite" finished-at="2024-11-10T19:10:56 IST" duration-ms="143241">
+  <suite started-at="2025-04-11T22:54:11 IST" name="Suite" finished-at="2025-04-11T22:55:49 IST" duration-ms="97799">
     <groups>
+      <group name="USER - POST API">
+        <method signature="PostTests.PostUserTestMethod1()[pri:1, instance:tests.user.PostTests@13b6aecc]" name="PostUserTestMethod1" class="tests.user.PostTests"/>
+        <method signature="PostTests.PostUserTestMethod2()[pri:2, instance:tests.user.PostTests@13b6aecc]" name="PostUserTestMethod2" class="tests.user.PostTests"/>
+        <method signature="PostTests.PostUserTestMethod3()[pri:3, instance:tests.user.PostTests@13b6aecc]" name="PostUserTestMethod3" class="tests.user.PostTests"/>
+        <method signature="PostTests.PostUserTestMethod4()[pri:4, instance:tests.user.PostTests@13b6aecc]" name="PostUserTestMethod4" class="tests.user.PostTests"/>
+        <method signature="PostTests.PostUserTestMethod5()[pri:5, instance:tests.user.PostTests@13b6aecc]" name="PostUserTestMethod5" class="tests.user.PostTests"/>
+        <method signature="PostTests.PostUserTestMethod6()[pri:6, instance:tests.user.PostTests@13b6aecc]" name="PostUserTestMethod6" class="tests.user.PostTests"/>
+        <method signature="PostTests.PostUserTestMethod7()[pri:7, instance:tests.user.PostTests@13b6aecc]" name="PostUserTestMethod7" class="tests.user.PostTests"/>
+      </group> <!-- USER - POST API -->
+      <group name="USER - DELETE API">
+        <method signature="DeleteTests.DeleteUserTestMethod1()[pri:22, instance:tests.user.DeleteTests@158a8276]" name="DeleteUserTestMethod1" class="tests.user.DeleteTests"/>
+        <method signature="DeleteTests.DeleteUserTestMethod3()[pri:24, instance:tests.user.DeleteTests@158a8276]" name="DeleteUserTestMethod3" class="tests.user.DeleteTests"/>
+        <method signature="DeleteTests.DeleteUserTestMethod4()[pri:25, instance:tests.user.DeleteTests@158a8276]" name="DeleteUserTestMethod4" class="tests.user.DeleteTests"/>
+        <method signature="DeleteTests.DeleteUserTestMethod5()[pri:25, instance:tests.user.DeleteTests@158a8276]" name="DeleteUserTestMethod5" class="tests.user.DeleteTests"/>
+        <method signature="DeleteTests.DeleteUserTestMethod6()[pri:26, instance:tests.user.DeleteTests@158a8276]" name="DeleteUserTestMethod6" class="tests.user.DeleteTests"/>
+        <method signature="DeleteTests.DeleteUserTestMethod7()[pri:27, instance:tests.user.DeleteTests@158a8276]" name="DeleteUserTestMethod7" class="tests.user.DeleteTests"/>
+      </group> <!-- USER - DELETE API -->
+      <group name="USER - PUT API">
+        <method signature="PutTests.PutUserTestMethod1()[pri:15, instance:tests.user.PutTests@305b7c14]" name="PutUserTestMethod1" class="tests.user.PutTests"/>
+        <method signature="PutTests.PutUserTestMethod2()[pri:16, instance:tests.user.PutTests@305b7c14]" name="PutUserTestMethod2" class="tests.user.PutTests"/>
+        <method signature="PutTests.PutUserTestMethod3()[pri:17, instance:tests.user.PutTests@305b7c14]" name="PutUserTestMethod3" class="tests.user.PutTests"/>
+        <method signature="PutTests.PutUserTestMethod4()[pri:18, instance:tests.user.PutTests@305b7c14]" name="PutUserTestMethod4" class="tests.user.PutTests"/>
+        <method signature="PutTests.PutUserTestMethod5()[pri:19, instance:tests.user.PutTests@305b7c14]" name="PutUserTestMethod5" class="tests.user.PutTests"/>
+        <method signature="PutTests.PutUserTestMethod6()[pri:20, instance:tests.user.PutTests@305b7c14]" name="PutUserTestMethod6" class="tests.user.PutTests"/>
+        <method signature="PutTests.PutUserTestMethod7()[pri:21, instance:tests.user.PutTests@305b7c14]" name="PutUserTestMethod7" class="tests.user.PutTests"/>
+      </group> <!-- USER - PUT API -->
       <group name="USER - GET API">
         <method signature="GetTests.GetUserTestMethod1()[pri:8, instance:tests.user.GetTests@7d8704ef]" name="GetUserTestMethod1" class="tests.user.GetTests"/>
         <method signature="GetTests.GetUserTestMethod2()[pri:9, instance:tests.user.GetTests@7d8704ef]" name="GetUserTestMethod2" class="tests.user.GetTests"/>
@@ -14,13 +40,13 @@
         <method signature="GetTests.GetUserTestMethod7()[pri:14, instance:tests.user.GetTests@7d8704ef]" name="GetUserTestMethod7" class="tests.user.GetTests"/>
       </group> <!-- USER - GET API -->
     </groups>
-    <test started-at="2024-11-10T19:08:33 IST" name="Test" finished-at="2024-11-10T19:10:56 IST" duration-ms="143241">
+    <test started-at="2025-04-11T22:54:11 IST" name="Test" finished-at="2025-04-11T22:55:49 IST" duration-ms="97799">
       <class name="tests.user.DeleteTests">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:tests.user.DeleteTests@158a8276]" started-at="2024-11-10T19:08:34 IST" name="Setup" finished-at="2024-11-10T19:08:34 IST" duration-ms="312" status="PASS">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:tests.user.DeleteTests@158a8276]" started-at="2025-04-11T22:54:12 IST" name="Setup" finished-at="2025-04-11T22:54:12 IST" duration-ms="367" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="DeleteUserTestMethod1()[pri:22, instance:tests.user.DeleteTests@158a8276]" started-at="2024-11-10T19:10:14 IST" name="DeleteUserTestMethod1" description="Validate that API should return API status code within 2XX series" finished-at="2024-11-10T19:10:20 IST" duration-ms="5669" status="FAIL">
+        <test-method signature="DeleteUserTestMethod1()[pri:22, instance:tests.user.DeleteTests@158a8276]" started-at="2025-04-11T22:55:22 IST" name="DeleteUserTestMethod1" description="Validate that API should return API status code within 2XX series" finished-at="2025-04-11T22:55:27 IST" duration-ms="5376" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Assertion 1]]>
@@ -28,7 +54,7 @@
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: Assertion 1
 at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:26)
-at tests.user.DeleteTests.DeleteUserTestMethod1(DeleteTests.java:55)
+at tests.user.DeleteTests.DeleteUserTestMethod1(DeleteTests.java:56)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -61,19 +87,112 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DeleteUserTestMethod1 -->
-        <test-method signature="DeleteUserTestMethod2()[pri:23, instance:tests.user.DeleteTests@158a8276]" started-at="2024-11-10T19:10:20 IST" name="DeleteUserTestMethod2" description="Validate that API should return API status code as 200" finished-at="2024-11-10T19:10:28 IST" duration-ms="8676" status="PASS">
+        <test-method signature="DeleteUserTestMethod2()[pri:23, instance:tests.user.DeleteTests@158a8276]" started-at="2025-04-11T22:55:27 IST" name="DeleteUserTestMethod2" description="Validate that API should return API status code as 200" finished-at="2025-04-11T22:55:32 IST" duration-ms="4421" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DeleteUserTestMethod2 -->
-        <test-method signature="DeleteUserTestMethod3()[pri:24, instance:tests.user.DeleteTests@158a8276]" started-at="2024-11-10T19:10:28 IST" name="DeleteUserTestMethod3" description="Validate that API should return a response payload ie. Non-empty response body and response header" finished-at="2024-11-10T19:10:34 IST" duration-ms="6113" status="PASS">
+        <test-method signature="DeleteUserTestMethod3()[pri:24, instance:tests.user.DeleteTests@158a8276]" started-at="2025-04-11T22:55:32 IST" name="DeleteUserTestMethod3" description="Validate that API should return a response payload ie. Non-empty response body and response header" finished-at="2025-04-11T22:55:35 IST" duration-ms="3027" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DeleteUserTestMethod3 -->
-        <test-method signature="DeleteUserTestMethod4()[pri:25, instance:tests.user.DeleteTests@158a8276]" started-at="2024-11-10T19:10:34 IST" name="DeleteUserTestMethod4" description="Validate that API should return response of type = JSON" finished-at="2024-11-10T19:10:39 IST" duration-ms="4848" status="PASS">
+        <test-method signature="DeleteUserTestMethod4()[pri:25, instance:tests.user.DeleteTests@158a8276]" started-at="2025-04-11T22:55:35 IST" name="DeleteUserTestMethod4" description="Validate that API should return response of type = JSON" finished-at="2025-04-11T22:55:37 IST" duration-ms="2649" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DeleteUserTestMethod4 -->
-        <test-method signature="DeleteUserTestMethod5()[pri:25, instance:tests.user.DeleteTests@158a8276]" started-at="2024-11-10T19:10:39 IST" name="DeleteUserTestMethod5" description="Validate that API should should adhere to Response structure as per data model mentioned in API Spec or API Doc.- JSON SCHEMA VALIDATION" finished-at="2024-11-10T19:10:46 IST" duration-ms="6900" status="FAIL">
+        <test-method signature="DeleteUserTestMethod5()[pri:25, instance:tests.user.DeleteTests@158a8276]" started-at="2025-04-11T22:55:37 IST" name="DeleteUserTestMethod5" description="Validate that API should should adhere to Response structure as per data model mentioned in API Spec or API Doc.- JSON SCHEMA VALIDATION" finished-at="2025-04-11T22:55:40 IST" duration-ms="3197" status="FAIL">
+          <exception class="io.restassured.path.json.exception.JsonPathException">
+            <message>
+              <![CDATA[Failed to parse the JSON document]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1002)
+at io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:967)
+at io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1047)
+at io.restassured.path.json.JsonPath.toJsonString(JsonPath.java:1064)
+at io.restassured.path.json.JsonPath.prettify(JsonPath.java:685)
+at io.restassured.path.json.JsonPath.prettyPrint(JsonPath.java:700)
+at tests.user.DeleteTests.DeleteUserTestMethod5(DeleteTests.java:105)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: java.lang.IllegalArgumentException: The JSON input text should neither be null nor empty.
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:80)
+at io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:965)
+at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1000)
+... 32 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.restassured.path.json.exception.JsonPathException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteUserTestMethod5 -->
+        <test-method signature="DeleteUserTestMethod6()[pri:26, instance:tests.user.DeleteTests@158a8276]" started-at="2025-04-11T22:55:40 IST" name="DeleteUserTestMethod6" description="Valdiate that API should return response body with details of all existing users" finished-at="2025-04-11T22:55:45 IST" duration-ms="4380" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteUserTestMethod6 -->
+        <test-method signature="DeleteUserTestMethod7()[pri:27, instance:tests.user.DeleteTests@158a8276]" started-at="2025-04-11T22:55:45 IST" name="DeleteUserTestMethod7" description="Valdiate that API should return response headers as per the spec" finished-at="2025-04-11T22:55:49 IST" duration-ms="4449" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteUserTestMethod7 -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:tests.user.DeleteTests@158a8276]" started-at="2025-04-11T22:55:49 IST" name="Teardown" finished-at="2025-04-11T22:55:49 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+      </class> <!-- tests.user.DeleteTests -->
+      <class name="tests.user.PostTests">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:tests.user.PostTests@13b6aecc]" started-at="2025-04-11T22:54:12 IST" name="Setup" finished-at="2025-04-11T22:54:12 IST" duration-ms="44" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="PostUserTestMethod1()[pri:1, instance:tests.user.PostTests@13b6aecc]" started-at="2025-04-11T22:55:10 IST" name="PostUserTestMethod1" description="Validate that API should return API status code within 2XX series" finished-at="2025-04-11T22:55:12 IST" duration-ms="2341" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PostUserTestMethod1 -->
+        <test-method signature="PostUserTestMethod2()[pri:2, instance:tests.user.PostTests@13b6aecc]" started-at="2025-04-11T22:55:12 IST" name="PostUserTestMethod2" description="Validate that API should return API status code as 200" finished-at="2025-04-11T22:55:13 IST" duration-ms="1377" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PostUserTestMethod2 -->
+        <test-method signature="PostUserTestMethod3()[pri:3, instance:tests.user.PostTests@13b6aecc]" started-at="2025-04-11T22:55:13 IST" name="PostUserTestMethod3" description="Validate that API should return a response payload i.e. Non-empty response body and response header" finished-at="2025-04-11T22:55:15 IST" duration-ms="1863" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PostUserTestMethod3 -->
+        <test-method signature="PostUserTestMethod4()[pri:4, instance:tests.user.PostTests@13b6aecc]" started-at="2025-04-11T22:55:15 IST" name="PostUserTestMethod4" description="Validate that API should return response of type = JSON" finished-at="2025-04-11T22:55:17 IST" duration-ms="2007" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PostUserTestMethod4 -->
+        <test-method signature="PostUserTestMethod5()[pri:5, instance:tests.user.PostTests@13b6aecc]" started-at="2025-04-11T22:55:17 IST" name="PostUserTestMethod5" description="Validate that API should should adhere to Response structure as per data model mentioned in API Spec or API Doc.- JSON SCHEMA VALIDATION" finished-at="2025-04-11T22:55:19 IST" duration-ms="1470" status="FAIL">
           <exception class="java.lang.IllegalArgumentException">
             <message>
               <![CDATA[Schema to use cannot be null]]>
@@ -85,7 +204,7 @@ at io.restassured.module.jsv.JsonSchemaValidator.access$300(JsonSchemaValidator.
 at io.restassured.module.jsv.JsonSchemaValidator$JsonSchemaValidatorFactory.create(JsonSchemaValidator.java:281)
 at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema(JsonSchemaValidator.java:166)
 at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath(JsonSchemaValidator.java:117)
-at tests.user.DeleteTests.DeleteUserTestMethod5(DeleteTests.java:102)
+at tests.user.PostTests.PostUserTestMethod5(PostTests.java:107)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -117,105 +236,30 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- DeleteUserTestMethod5 -->
-        <test-method signature="DeleteUserTestMethod6()[pri:26, instance:tests.user.DeleteTests@158a8276]" started-at="2024-11-10T19:10:46 IST" name="DeleteUserTestMethod6" description="Valdiate that API should return response body with details of all existing users" finished-at="2024-11-10T19:10:53 IST" duration-ms="6627" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DeleteUserTestMethod6 -->
-        <test-method signature="DeleteUserTestMethod7()[pri:27, instance:tests.user.DeleteTests@158a8276]" started-at="2024-11-10T19:10:53 IST" name="DeleteUserTestMethod7" description="Valdiate that API should return response headers as per the spec" finished-at="2024-11-10T19:10:56 IST" duration-ms="3613" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DeleteUserTestMethod7 -->
-        <test-method is-config="true" signature="Teardown()[pri:0, instance:tests.user.DeleteTests@158a8276]" started-at="2024-11-10T19:10:56 IST" name="Teardown" finished-at="2024-11-10T19:10:56 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Teardown -->
-      </class> <!-- tests.user.DeleteTests -->
-      <class name="tests.user.PostTests">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:tests.user.PostTests@13b6aecc]" started-at="2024-11-10T19:08:34 IST" name="Setup" finished-at="2024-11-10T19:08:34 IST" duration-ms="43" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method signature="PostUserTestMethod1()[pri:1, instance:tests.user.PostTests@13b6aecc]" started-at="2024-11-10T19:09:58 IST" name="PostUserTestMethod1" description="Validate that API should return API status code within 2XX series" finished-at="2024-11-10T19:10:01 IST" duration-ms="2582" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- PostUserTestMethod1 -->
-        <test-method signature="PostUserTestMethod2()[pri:2, instance:tests.user.PostTests@13b6aecc]" started-at="2024-11-10T19:10:01 IST" name="PostUserTestMethod2" description="Validate that API should return API status code as 200" finished-at="2024-11-10T19:10:02 IST" duration-ms="1509" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- PostUserTestMethod2 -->
-        <test-method signature="PostUserTestMethod3()[pri:3, instance:tests.user.PostTests@13b6aecc]" started-at="2024-11-10T19:10:02 IST" name="PostUserTestMethod3" description="Validate that API should return a response payload i.e. Non-empty response body and response header" finished-at="2024-11-10T19:10:05 IST" duration-ms="2388" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- PostUserTestMethod3 -->
-        <test-method signature="PostUserTestMethod4()[pri:4, instance:tests.user.PostTests@13b6aecc]" started-at="2024-11-10T19:10:05 IST" name="PostUserTestMethod4" description="Validate that API should return response of type = JSON" finished-at="2024-11-10T19:10:07 IST" duration-ms="2257" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- PostUserTestMethod4 -->
-        <test-method signature="PostUserTestMethod5()[pri:5, instance:tests.user.PostTests@13b6aecc]" started-at="2024-11-10T19:10:07 IST" name="PostUserTestMethod5" description="Validate that API should should adhere to Response structure as per data model mentioned in API Spec or API Doc.- JSON SCHEMA VALIDATION" finished-at="2024-11-10T19:10:09 IST" duration-ms="2184" status="PASS">
-          <reporter-output>
-          </reporter-output>
         </test-method> <!-- PostUserTestMethod5 -->
-        <test-method signature="PostUserTestMethod6()[pri:6, instance:tests.user.PostTests@13b6aecc]" started-at="2024-11-10T19:10:09 IST" name="PostUserTestMethod6" description="Valdiate that API should return response body as per the req spec" finished-at="2024-11-10T19:10:11 IST" duration-ms="2224" status="PASS">
+        <test-method signature="PostUserTestMethod6()[pri:6, instance:tests.user.PostTests@13b6aecc]" started-at="2025-04-11T22:55:19 IST" name="PostUserTestMethod6" description="Valdiate that API should return response body as per the req spec" finished-at="2025-04-11T22:55:20 IST" duration-ms="1731" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PostUserTestMethod6 -->
-        <test-method signature="PostUserTestMethod7()[pri:7, instance:tests.user.PostTests@13b6aecc]" started-at="2024-11-10T19:10:11 IST" name="PostUserTestMethod7" description="Valdiate that API should return response headers as per the req spec" finished-at="2024-11-10T19:10:14 IST" duration-ms="2533" status="PASS">
+        <test-method signature="PostUserTestMethod7()[pri:7, instance:tests.user.PostTests@13b6aecc]" started-at="2025-04-11T22:55:20 IST" name="PostUserTestMethod7" description="Valdiate that API should return response headers as per the req spec" finished-at="2025-04-11T22:55:22 IST" duration-ms="1301" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PostUserTestMethod7 -->
-        <test-method is-config="true" signature="Teardown()[pri:0, instance:tests.user.PostTests@13b6aecc]" started-at="2024-11-10T19:10:56 IST" name="Teardown" finished-at="2024-11-10T19:10:56 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:tests.user.PostTests@13b6aecc]" started-at="2025-04-11T22:55:49 IST" name="Teardown" finished-at="2025-04-11T22:55:49 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Teardown -->
       </class> <!-- tests.user.PostTests -->
       <class name="tests.user.GetTests">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:tests.user.GetTests@7d8704ef]" started-at="2024-11-10T19:08:34 IST" name="Setup" finished-at="2024-11-10T19:08:34 IST" duration-ms="40" status="PASS">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:tests.user.GetTests@7d8704ef]" started-at="2025-04-11T22:54:12 IST" name="Setup" finished-at="2025-04-11T22:54:12 IST" duration-ms="33" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="GetUserTestMethod1()[pri:8, instance:tests.user.GetTests@7d8704ef]" started-at="2024-11-10T19:09:19 IST" name="GetUserTestMethod1" description="Validate that API should return API status code within 2XX series" finished-at="2024-11-10T19:09:25 IST" duration-ms="6028" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Assertion 1]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Assertion 1
-at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:26)
-at tests.user.GetTests.GetUserTestMethod1(GetTests.java:58)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="GetUserTestMethod1()[pri:8, instance:tests.user.GetTests@7d8704ef]" started-at="2025-04-11T22:54:49 IST" name="GetUserTestMethod1" description="Validate that API should return API status code within 2XX series" finished-at="2025-04-11T22:54:52 IST" duration-ms="2467" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetUserTestMethod1 -->
-        <test-method signature="GetUserTestMethod2()[pri:9, instance:tests.user.GetTests@7d8704ef]" started-at="2024-11-10T19:09:25 IST" name="GetUserTestMethod2" description="Validate that API should return API status code as 200" finished-at="2024-11-10T19:09:31 IST" duration-ms="5914" status="FAIL">
+        <test-method signature="GetUserTestMethod2()[pri:9, instance:tests.user.GetTests@7d8704ef]" started-at="2025-04-11T22:54:52 IST" name="GetUserTestMethod2" description="Validate that API should return API status code as 200" finished-at="2025-04-11T22:54:54 IST" duration-ms="2693" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[
@@ -261,65 +305,65 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetUserTestMethod2 -->
-        <test-method signature="GetUserTestMethod3()[pri:10, instance:tests.user.GetTests@7d8704ef]" started-at="2024-11-10T19:09:31 IST" name="GetUserTestMethod3" description="Validate that API should return a response payload ie. Non-empty response body and response header" finished-at="2024-11-10T19:09:37 IST" duration-ms="6058" status="PASS">
+        <test-method signature="GetUserTestMethod3()[pri:10, instance:tests.user.GetTests@7d8704ef]" started-at="2025-04-11T22:54:54 IST" name="GetUserTestMethod3" description="Validate that API should return a response payload ie. Non-empty response body and response header" finished-at="2025-04-11T22:54:57 IST" duration-ms="2524" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetUserTestMethod3 -->
-        <test-method signature="GetUserTestMethod4()[pri:11, instance:tests.user.GetTests@7d8704ef]" started-at="2024-11-10T19:09:37 IST" name="GetUserTestMethod4" description="Validate that API should return response of type = JSON" finished-at="2024-11-10T19:09:41 IST" duration-ms="4569" status="PASS">
+        <test-method signature="GetUserTestMethod4()[pri:11, instance:tests.user.GetTests@7d8704ef]" started-at="2025-04-11T22:54:57 IST" name="GetUserTestMethod4" description="Validate that API should return response of type = JSON" finished-at="2025-04-11T22:55:00 IST" duration-ms="3148" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetUserTestMethod4 -->
-        <test-method signature="GetUserTestMethod5()[pri:12, instance:tests.user.GetTests@7d8704ef]" started-at="2024-11-10T19:09:41 IST" name="GetUserTestMethod5" description="Validate that API should should adhere to Response structure as per data model mentioned in API Spec or API Doc.- JSON SCHEMA VALIDATION" finished-at="2024-11-10T19:09:46 IST" duration-ms="4587" status="PASS">
+        <test-method signature="GetUserTestMethod5()[pri:12, instance:tests.user.GetTests@7d8704ef]" started-at="2025-04-11T22:55:00 IST" name="GetUserTestMethod5" description="Validate that API should should adhere to Response structure as per data model mentioned in API Spec or API Doc.- JSON SCHEMA VALIDATION" finished-at="2025-04-11T22:55:03 IST" duration-ms="2877" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetUserTestMethod5 -->
-        <test-method signature="GetUserTestMethod6()[pri:13, instance:tests.user.GetTests@7d8704ef]" started-at="2024-11-10T19:09:46 IST" name="GetUserTestMethod6" description="Validate that API should return response body with details of all existing users" finished-at="2024-11-10T19:09:53 IST" duration-ms="7230" status="PASS">
+        <test-method signature="GetUserTestMethod6()[pri:13, instance:tests.user.GetTests@7d8704ef]" started-at="2025-04-11T22:55:03 IST" name="GetUserTestMethod6" description="Validate that API should return response body with details of all existing users" finished-at="2025-04-11T22:55:07 IST" duration-ms="3644" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetUserTestMethod6 -->
-        <test-method signature="GetUserTestMethod7()[pri:14, instance:tests.user.GetTests@7d8704ef]" started-at="2024-11-10T19:09:53 IST" name="GetUserTestMethod7" description="Valdiate that API should return response headers as per the spec" finished-at="2024-11-10T19:09:58 IST" duration-ms="5132" status="PASS">
+        <test-method signature="GetUserTestMethod7()[pri:14, instance:tests.user.GetTests@7d8704ef]" started-at="2025-04-11T22:55:07 IST" name="GetUserTestMethod7" description="Valdiate that API should return response headers as per the spec" finished-at="2025-04-11T22:55:10 IST" duration-ms="3070" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetUserTestMethod7 -->
-        <test-method is-config="true" signature="Teardown()[pri:0, instance:tests.user.GetTests@7d8704ef]" started-at="2024-11-10T19:10:56 IST" name="Teardown" finished-at="2024-11-10T19:10:56 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:tests.user.GetTests@7d8704ef]" started-at="2025-04-11T22:55:49 IST" name="Teardown" finished-at="2025-04-11T22:55:49 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Teardown -->
       </class> <!-- tests.user.GetTests -->
       <class name="tests.user.PutTests">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:tests.user.PutTests@305b7c14]" started-at="2024-11-10T19:08:34 IST" name="Setup" finished-at="2024-11-10T19:08:34 IST" duration-ms="41" status="PASS">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:tests.user.PutTests@305b7c14]" started-at="2025-04-11T22:54:12 IST" name="Setup" finished-at="2025-04-11T22:54:12 IST" duration-ms="41" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="PutUserTestMethod1()[pri:15, instance:tests.user.PutTests@305b7c14]" started-at="2024-11-10T19:08:34 IST" name="PutUserTestMethod1" description="Validate that API should return API status code within 2XX series" finished-at="2024-11-10T19:08:42 IST" duration-ms="7921" status="PASS">
+        <test-method signature="PutUserTestMethod1()[pri:15, instance:tests.user.PutTests@305b7c14]" started-at="2025-04-11T22:54:13 IST" name="PutUserTestMethod1" description="Validate that API should return API status code within 2XX series" finished-at="2025-04-11T22:54:21 IST" duration-ms="8043" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PutUserTestMethod1 -->
-        <test-method signature="PutUserTestMethod2()[pri:16, instance:tests.user.PutTests@305b7c14]" started-at="2024-11-10T19:08:42 IST" name="PutUserTestMethod2" description="Validate that API should return API status code as 200" finished-at="2024-11-10T19:08:47 IST" duration-ms="4668" status="PASS">
+        <test-method signature="PutUserTestMethod2()[pri:16, instance:tests.user.PutTests@305b7c14]" started-at="2025-04-11T22:54:21 IST" name="PutUserTestMethod2" description="Validate that API should return API status code as 200" finished-at="2025-04-11T22:54:27 IST" duration-ms="6429" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PutUserTestMethod2 -->
-        <test-method signature="PutUserTestMethod3()[pri:17, instance:tests.user.PutTests@305b7c14]" started-at="2024-11-10T19:08:47 IST" name="PutUserTestMethod3" description="Validate that API should return a response payload ie. Non-empty response body and response header" finished-at="2024-11-10T19:08:52 IST" duration-ms="5658" status="PASS">
+        <test-method signature="PutUserTestMethod3()[pri:17, instance:tests.user.PutTests@305b7c14]" started-at="2025-04-11T22:54:27 IST" name="PutUserTestMethod3" description="Validate that API should return a response payload ie. Non-empty response body and response header" finished-at="2025-04-11T22:54:35 IST" duration-ms="8319" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PutUserTestMethod3 -->
-        <test-method signature="PutUserTestMethod4()[pri:18, instance:tests.user.PutTests@305b7c14]" started-at="2024-11-10T19:08:52 IST" name="PutUserTestMethod4" description="Validate that API should return response of type = JSON" finished-at="2024-11-10T19:08:56 IST" duration-ms="3916" status="PASS">
+        <test-method signature="PutUserTestMethod4()[pri:18, instance:tests.user.PutTests@305b7c14]" started-at="2025-04-11T22:54:35 IST" name="PutUserTestMethod4" description="Validate that API should return response of type = JSON" finished-at="2025-04-11T22:54:38 IST" duration-ms="2496" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PutUserTestMethod4 -->
-        <test-method signature="PutUserTestMethod5()[pri:19, instance:tests.user.PutTests@305b7c14]" started-at="2024-11-10T19:08:56 IST" name="PutUserTestMethod5" description="Validate that API should should adhere to Response structure as per data model mentioned in API Spec or API Doc.- JSON SCHEMA VALIDATION" finished-at="2024-11-10T19:09:07 IST" duration-ms="10585" status="PASS">
+        <test-method signature="PutUserTestMethod5()[pri:19, instance:tests.user.PutTests@305b7c14]" started-at="2025-04-11T22:54:38 IST" name="PutUserTestMethod5" description="Validate that API should should adhere to Response structure as per data model mentioned in API Spec or API Doc.- JSON SCHEMA VALIDATION" finished-at="2025-04-11T22:54:41 IST" duration-ms="3230" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PutUserTestMethod5 -->
-        <test-method signature="PutUserTestMethod6()[pri:20, instance:tests.user.PutTests@305b7c14]" started-at="2024-11-10T19:09:07 IST" name="PutUserTestMethod6" description="Valdiate that API should return response body with details of all existing users" finished-at="2024-11-10T19:09:14 IST" duration-ms="7158" status="PASS">
+        <test-method signature="PutUserTestMethod6()[pri:20, instance:tests.user.PutTests@305b7c14]" started-at="2025-04-11T22:54:41 IST" name="PutUserTestMethod6" description="Valdiate that API should return response body with details of all existing users" finished-at="2025-04-11T22:54:46 IST" duration-ms="5241" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PutUserTestMethod6 -->
-        <test-method signature="PutUserTestMethod7()[pri:21, instance:tests.user.PutTests@305b7c14]" started-at="2024-11-10T19:09:14 IST" name="PutUserTestMethod7" description="Validate that API should return response headers as per the spec" finished-at="2024-11-10T19:09:19 IST" duration-ms="4501" status="PASS">
+        <test-method signature="PutUserTestMethod7()[pri:21, instance:tests.user.PutTests@305b7c14]" started-at="2025-04-11T22:54:46 IST" name="PutUserTestMethod7" description="Validate that API should return response headers as per the spec" finished-at="2025-04-11T22:54:49 IST" duration-ms="2711" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PutUserTestMethod7 -->
-        <test-method is-config="true" signature="Teardown()[pri:0, instance:tests.user.PutTests@305b7c14]" started-at="2024-11-10T19:10:56 IST" name="Teardown" finished-at="2024-11-10T19:10:56 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:tests.user.PutTests@305b7c14]" started-at="2025-04-11T22:55:49 IST" name="Teardown" finished-at="2025-04-11T22:55:49 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Teardown -->

@@ -60,7 +60,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Suite" class="navigator-link ">
-                    <span>1 group</span>
+                    <span>4 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -113,12 +113,12 @@
                       <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.user.GetTests" class="method navigator-link" hash-for-method="GetUserTestMethod1">GetUserTestMethod1</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="tests.user.GetTests" class="method navigator-link" hash-for-method="GetUserTestMethod2">GetUserTestMethod2</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.user.GetTests" class="method navigator-link" hash-for-method="GetUserTestMethod2">GetUserTestMethod2</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="tests.user.PostTests" class="method navigator-link" hash-for-method="PostUserTestMethod5">PostUserTestMethod5</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -153,6 +153,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="tests.user.DeleteTests" class="method navigator-link" hash-for-method="DeleteUserTestMethod7">DeleteUserTestMethod7</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.user.GetTests" class="method navigator-link" hash-for-method="GetUserTestMethod1">GetUserTestMethod1</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -198,11 +203,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="tests.user.PostTests" class="method navigator-link" hash-for-method="PostUserTestMethod4">PostUserTestMethod4</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.user.PostTests" class="method navigator-link" hash-for-method="PostUserTestMethod5">PostUserTestMethod5</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -265,40 +265,26 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">tests.user.GetTests</span>
+              <span class="class-name">tests.user.PostTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="GetUserTestMethod1">
-                  </a> <!-- GetUserTestMethod1 -->
-                  <span class="method-name">GetUserTestMethod1</span>
-                  <div class="stack-trace">java.lang.AssertionError: Assertion 1
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:26)
-	at tests.user.GetTests.GetUserTestMethod1(GetTests.java:58)
+                  <a name="PostUserTestMethod5">
+                  </a> <!-- PostUserTestMethod5 -->
+                  <span class="method-name">PostUserTestMethod5</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Schema to use cannot be null
+	at io.restassured.module.jsv.JsonSchemaValidator.validateSchemaIsNotNull(JsonSchemaValidator.java:270)
+	at io.restassured.module.jsv.JsonSchemaValidator.access$300(JsonSchemaValidator.java:75)
+	at io.restassured.module.jsv.JsonSchemaValidator$JsonSchemaValidatorFactory.create(JsonSchemaValidator.java:281)
+	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema(JsonSchemaValidator.java:166)
+	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath(JsonSchemaValidator.java:117)
+	at tests.user.PostTests.PostUserTestMethod5(PostTests.java:107)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 ... Removed 25 stack frames
 </div> <!-- stack-trace -->
                   <em>
-(Validate that API should return API status code within 2XX series)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="GetUserTestMethod2">
-                  </a> <!-- GetUserTestMethod2 -->
-                  <span class="method-name">GetUserTestMethod2</span>
-                  <div class="stack-trace">java.lang.AssertionError: 
-Expected: is &lt;200&gt;
-     but: was &lt;404&gt;
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
-	at tests.user.GetTests.GetUserTestMethod2(GetTests.java:67)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 25 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Validate that API should return API status code as 200)                  </em>
+(Validate that API should should adhere to Response structure as per data model mentioned in API Spec or API Doc.- JSON SCHEMA VALIDATION)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -316,7 +302,7 @@ Expected: is &lt;200&gt;
                   <span class="method-name">DeleteUserTestMethod1</span>
                   <div class="stack-trace">java.lang.AssertionError: Assertion 1
 	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:26)
-	at tests.user.DeleteTests.DeleteUserTestMethod1(DeleteTests.java:55)
+	at tests.user.DeleteTests.DeleteUserTestMethod1(DeleteTests.java:56)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 ... Removed 25 stack frames
 </div> <!-- stack-trace -->
@@ -329,18 +315,54 @@ Expected: is &lt;200&gt;
                   <a name="DeleteUserTestMethod5">
                   </a> <!-- DeleteUserTestMethod5 -->
                   <span class="method-name">DeleteUserTestMethod5</span>
-                  <div class="stack-trace">java.lang.IllegalArgumentException: Schema to use cannot be null
-	at io.restassured.module.jsv.JsonSchemaValidator.validateSchemaIsNotNull(JsonSchemaValidator.java:270)
-	at io.restassured.module.jsv.JsonSchemaValidator.access$300(JsonSchemaValidator.java:75)
-	at io.restassured.module.jsv.JsonSchemaValidator$JsonSchemaValidatorFactory.create(JsonSchemaValidator.java:281)
-	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema(JsonSchemaValidator.java:166)
-	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath(JsonSchemaValidator.java:117)
-	at tests.user.DeleteTests.DeleteUserTestMethod5(DeleteTests.java:102)
+                  <div class="stack-trace">io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1002)
+	at io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:967)
+	at io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1047)
+	at io.restassured.path.json.JsonPath.toJsonString(JsonPath.java:1064)
+	at io.restassured.path.json.JsonPath.prettify(JsonPath.java:685)
+	at io.restassured.path.json.JsonPath.prettyPrint(JsonPath.java:700)
+	at tests.user.DeleteTests.DeleteUserTestMethod5(DeleteTests.java:105)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+Caused by: java.lang.IllegalArgumentException: The JSON input text should neither be null nor empty.
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:80)
+	at io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:965)
+	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1000)
+	... 32 more
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Validate that API should should adhere to Response structure as per data model mentioned in API Spec or API Doc.- JSON SCHEMA VALIDATION)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.user.GetTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="GetUserTestMethod2">
+                  </a> <!-- GetUserTestMethod2 -->
+                  <span class="method-name">GetUserTestMethod2</span>
+                  <div class="stack-trace">java.lang.AssertionError: 
+Expected: is &lt;200&gt;
+     but: was &lt;404&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
+	at tests.user.GetTests.GetUserTestMethod2(GetTests.java:67)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 ... Removed 25 stack frames
 </div> <!-- stack-trace -->
                   <em>
-(Validate that API should should adhere to Response structure as per data model mentioned in API Spec or API Doc.- JSON SCHEMA VALIDATION)                  </em>
+(Validate that API should return API status code as 200)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -389,15 +411,6 @@ Expected: is &lt;200&gt;
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="PostUserTestMethod5">
-                  </a> <!-- PostUserTestMethod5 -->
-                  <span class="method-name">PostUserTestMethod5</span>
-                  <em>
-(Validate that API should should adhere to Response structure as per data model mentioned in API Spec or API Doc.- JSON SCHEMA VALIDATION)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="PostUserTestMethod6">
                   </a> <!-- PostUserTestMethod6 -->
                   <span class="method-name">PostUserTestMethod6</span>
@@ -422,6 +435,15 @@ Expected: is &lt;200&gt;
               <span class="class-name">tests.user.GetTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="GetUserTestMethod1">
+                  </a> <!-- GetUserTestMethod1 -->
+                  <span class="method-name">GetUserTestMethod1</span>
+                  <em>
+(Validate that API should return API status code within 2XX series)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="GetUserTestMethod3">
@@ -636,6 +658,34 @@ Expected: is &lt;200&gt;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
+              <span class="test-group-name">USER - DELETE API</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">DeleteUserTestMethod1</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">DeleteUserTestMethod3</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">DeleteUserTestMethod4</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">DeleteUserTestMethod5</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">DeleteUserTestMethod6</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">DeleteUserTestMethod7</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
               <span class="test-group-name">USER - GET API</span>
               <br/>
               <div class="method-in-group">
@@ -667,6 +717,70 @@ Expected: is &lt;200&gt;
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">USER - POST API</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">PostUserTestMethod1</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">PostUserTestMethod2</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">PostUserTestMethod3</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">PostUserTestMethod4</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">PostUserTestMethod5</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">PostUserTestMethod6</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">PostUserTestMethod7</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">USER - PUT API</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">PutUserTestMethod1</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">PutUserTestMethod2</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">PutUserTestMethod3</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">PutUserTestMethod4</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">PutUserTestMethod5</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">PutUserTestMethod6</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">PutUserTestMethod7</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Suite" class="panel">
@@ -685,122 +799,122 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(28);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'PutUserTestMethod5')
+data.setCell(0, 1, 'PutUserTestMethod3')
 data.setCell(0, 2, 'tests.user.PutTests')
-data.setCell(0, 3, 10585);
+data.setCell(0, 3, 8319);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'DeleteUserTestMethod2')
-data.setCell(1, 2, 'tests.user.DeleteTests')
-data.setCell(1, 3, 8676);
+data.setCell(1, 1, 'PutUserTestMethod1')
+data.setCell(1, 2, 'tests.user.PutTests')
+data.setCell(1, 3, 8043);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'PutUserTestMethod1')
+data.setCell(2, 1, 'PutUserTestMethod2')
 data.setCell(2, 2, 'tests.user.PutTests')
-data.setCell(2, 3, 7921);
+data.setCell(2, 3, 6429);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'GetUserTestMethod6')
-data.setCell(3, 2, 'tests.user.GetTests')
-data.setCell(3, 3, 7230);
+data.setCell(3, 1, 'DeleteUserTestMethod1')
+data.setCell(3, 2, 'tests.user.DeleteTests')
+data.setCell(3, 3, 5376);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'PutUserTestMethod6')
 data.setCell(4, 2, 'tests.user.PutTests')
-data.setCell(4, 3, 7158);
+data.setCell(4, 3, 5241);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'DeleteUserTestMethod5')
+data.setCell(5, 1, 'DeleteUserTestMethod7')
 data.setCell(5, 2, 'tests.user.DeleteTests')
-data.setCell(5, 3, 6900);
+data.setCell(5, 3, 4449);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'DeleteUserTestMethod6')
+data.setCell(6, 1, 'DeleteUserTestMethod2')
 data.setCell(6, 2, 'tests.user.DeleteTests')
-data.setCell(6, 3, 6627);
+data.setCell(6, 3, 4421);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'DeleteUserTestMethod3')
+data.setCell(7, 1, 'DeleteUserTestMethod6')
 data.setCell(7, 2, 'tests.user.DeleteTests')
-data.setCell(7, 3, 6113);
+data.setCell(7, 3, 4380);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'GetUserTestMethod3')
+data.setCell(8, 1, 'GetUserTestMethod6')
 data.setCell(8, 2, 'tests.user.GetTests')
-data.setCell(8, 3, 6058);
+data.setCell(8, 3, 3644);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'GetUserTestMethod1')
-data.setCell(9, 2, 'tests.user.GetTests')
-data.setCell(9, 3, 6028);
+data.setCell(9, 1, 'PutUserTestMethod5')
+data.setCell(9, 2, 'tests.user.PutTests')
+data.setCell(9, 3, 3230);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'GetUserTestMethod2')
-data.setCell(10, 2, 'tests.user.GetTests')
-data.setCell(10, 3, 5914);
+data.setCell(10, 1, 'DeleteUserTestMethod5')
+data.setCell(10, 2, 'tests.user.DeleteTests')
+data.setCell(10, 3, 3197);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'DeleteUserTestMethod1')
-data.setCell(11, 2, 'tests.user.DeleteTests')
-data.setCell(11, 3, 5669);
+data.setCell(11, 1, 'GetUserTestMethod4')
+data.setCell(11, 2, 'tests.user.GetTests')
+data.setCell(11, 3, 3148);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'PutUserTestMethod3')
-data.setCell(12, 2, 'tests.user.PutTests')
-data.setCell(12, 3, 5658);
+data.setCell(12, 1, 'GetUserTestMethod7')
+data.setCell(12, 2, 'tests.user.GetTests')
+data.setCell(12, 3, 3070);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'GetUserTestMethod7')
-data.setCell(13, 2, 'tests.user.GetTests')
-data.setCell(13, 3, 5132);
+data.setCell(13, 1, 'DeleteUserTestMethod3')
+data.setCell(13, 2, 'tests.user.DeleteTests')
+data.setCell(13, 3, 3027);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'DeleteUserTestMethod4')
-data.setCell(14, 2, 'tests.user.DeleteTests')
-data.setCell(14, 3, 4848);
+data.setCell(14, 1, 'GetUserTestMethod5')
+data.setCell(14, 2, 'tests.user.GetTests')
+data.setCell(14, 3, 2877);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'PutUserTestMethod2')
+data.setCell(15, 1, 'PutUserTestMethod7')
 data.setCell(15, 2, 'tests.user.PutTests')
-data.setCell(15, 3, 4668);
+data.setCell(15, 3, 2711);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'GetUserTestMethod5')
+data.setCell(16, 1, 'GetUserTestMethod2')
 data.setCell(16, 2, 'tests.user.GetTests')
-data.setCell(16, 3, 4587);
+data.setCell(16, 3, 2693);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'GetUserTestMethod4')
-data.setCell(17, 2, 'tests.user.GetTests')
-data.setCell(17, 3, 4569);
+data.setCell(17, 1, 'DeleteUserTestMethod4')
+data.setCell(17, 2, 'tests.user.DeleteTests')
+data.setCell(17, 3, 2649);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'PutUserTestMethod7')
-data.setCell(18, 2, 'tests.user.PutTests')
-data.setCell(18, 3, 4501);
+data.setCell(18, 1, 'GetUserTestMethod3')
+data.setCell(18, 2, 'tests.user.GetTests')
+data.setCell(18, 3, 2524);
 data.setCell(19, 0, 19)
 data.setCell(19, 1, 'PutUserTestMethod4')
 data.setCell(19, 2, 'tests.user.PutTests')
-data.setCell(19, 3, 3916);
+data.setCell(19, 3, 2496);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'DeleteUserTestMethod7')
-data.setCell(20, 2, 'tests.user.DeleteTests')
-data.setCell(20, 3, 3613);
+data.setCell(20, 1, 'GetUserTestMethod1')
+data.setCell(20, 2, 'tests.user.GetTests')
+data.setCell(20, 3, 2467);
 data.setCell(21, 0, 21)
 data.setCell(21, 1, 'PostUserTestMethod1')
 data.setCell(21, 2, 'tests.user.PostTests')
-data.setCell(21, 3, 2582);
+data.setCell(21, 3, 2341);
 data.setCell(22, 0, 22)
-data.setCell(22, 1, 'PostUserTestMethod7')
+data.setCell(22, 1, 'PostUserTestMethod4')
 data.setCell(22, 2, 'tests.user.PostTests')
-data.setCell(22, 3, 2533);
+data.setCell(22, 3, 2007);
 data.setCell(23, 0, 23)
 data.setCell(23, 1, 'PostUserTestMethod3')
 data.setCell(23, 2, 'tests.user.PostTests')
-data.setCell(23, 3, 2388);
+data.setCell(23, 3, 1863);
 data.setCell(24, 0, 24)
-data.setCell(24, 1, 'PostUserTestMethod4')
+data.setCell(24, 1, 'PostUserTestMethod6')
 data.setCell(24, 2, 'tests.user.PostTests')
-data.setCell(24, 3, 2257);
+data.setCell(24, 3, 1731);
 data.setCell(25, 0, 25)
-data.setCell(25, 1, 'PostUserTestMethod6')
+data.setCell(25, 1, 'PostUserTestMethod5')
 data.setCell(25, 2, 'tests.user.PostTests')
-data.setCell(25, 3, 2224);
+data.setCell(25, 3, 1470);
 data.setCell(26, 0, 26)
-data.setCell(26, 1, 'PostUserTestMethod5')
+data.setCell(26, 1, 'PostUserTestMethod2')
 data.setCell(26, 2, 'tests.user.PostTests')
-data.setCell(26, 3, 2184);
+data.setCell(26, 3, 1377);
 data.setCell(27, 0, 27)
-data.setCell(27, 1, 'PostUserTestMethod2')
+data.setCell(27, 1, 'PostUserTestMethod7')
 data.setCell(27, 2, 'tests.user.PostTests')
-data.setCell(27, 3, 1509);
+data.setCell(27, 3, 1301);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -836,115 +950,115 @@ return data;
               <div class="chronological-class-name">tests.user.GetTests</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">Setup</span>
-                <span class="method-start">313 ms</span>
+                <span class="method-start">369 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.user.PostTests</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">Setup</span>
-                <span class="method-start">354 ms</span>
+                <span class="method-start">402 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.user.PutTests</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">Setup</span>
-                <span class="method-start">397 ms</span>
+                <span class="method-start">446 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">PutUserTestMethod1</span>
-                <span class="method-start">502 ms</span>
+                <span class="method-start">583 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">PutUserTestMethod2</span>
-                <span class="method-start">8459 ms</span>
+                <span class="method-start">8665 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">PutUserTestMethod3</span>
-                <span class="method-start">13133 ms</span>
+                <span class="method-start">15104 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">PutUserTestMethod4</span>
-                <span class="method-start">18799 ms</span>
+                <span class="method-start">23426 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">PutUserTestMethod5</span>
-                <span class="method-start">22720 ms</span>
+                <span class="method-start">25930 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">PutUserTestMethod6</span>
-                <span class="method-start">33308 ms</span>
+                <span class="method-start">29167 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">PutUserTestMethod7</span>
-                <span class="method-start">40469 ms</span>
+                <span class="method-start">34423 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.user.GetTests</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">GetUserTestMethod1</span>
-                <span class="method-start">44979 ms</span>
+                <span class="method-start">37142 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">GetUserTestMethod2</span>
-                <span class="method-start">51028 ms</span>
+                <span class="method-start">39613 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">GetUserTestMethod3</span>
-                <span class="method-start">56954 ms</span>
+                <span class="method-start">42316 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">GetUserTestMethod4</span>
-                <span class="method-start">63015 ms</span>
+                <span class="method-start">44846 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">GetUserTestMethod5</span>
-                <span class="method-start">67588 ms</span>
+                <span class="method-start">47997 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">GetUserTestMethod6</span>
-                <span class="method-start">72179 ms</span>
+                <span class="method-start">50878 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">GetUserTestMethod7</span>
-                <span class="method-start">79411 ms</span>
+                <span class="method-start">54526 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.user.PostTests</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">PostUserTestMethod1</span>
-                <span class="method-start">84545 ms</span>
+                <span class="method-start">57604 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">PostUserTestMethod2</span>
-                <span class="method-start">87136 ms</span>
+                <span class="method-start">59952 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">PostUserTestMethod3</span>
-                <span class="method-start">88650 ms</span>
+                <span class="method-start">61336 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">PostUserTestMethod4</span>
-                <span class="method-start">91040 ms</span>
+                <span class="method-start">63205 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">PostUserTestMethod5</span>
-                <span class="method-start">93297 ms</span>
+                <span class="method-start">65217 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">PostUserTestMethod6</span>
-                <span class="method-start">95482 ms</span>
+                <span class="method-start">66700 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">PostUserTestMethod7</span>
-                <span class="method-start">97709 ms</span>
+                <span class="method-start">68434 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -953,58 +1067,58 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">DeleteUserTestMethod1</span>
-                <span class="method-start">100248 ms</span>
+                <span class="method-start">69740 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">DeleteUserTestMethod2</span>
-                <span class="method-start">105927 ms</span>
+                <span class="method-start">75122 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">DeleteUserTestMethod3</span>
-                <span class="method-start">114607 ms</span>
+                <span class="method-start">79548 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">DeleteUserTestMethod4</span>
-                <span class="method-start">120731 ms</span>
+                <span class="method-start">82579 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">DeleteUserTestMethod5</span>
-                <span class="method-start">125587 ms</span>
+                <span class="method-start">85234 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">DeleteUserTestMethod6</span>
-                <span class="method-start">132490 ms</span>
+                <span class="method-start">88438 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">DeleteUserTestMethod7</span>
-                <span class="method-start">139117 ms</span>
+                <span class="method-start">92821 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">Teardown</span>
-                <span class="method-start">142736 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.user.PostTests</div> <!-- chronological-class-name -->
-              <div class="configuration-test after">
-                <span class="method-name">Teardown</span>
-                <span class="method-start">142737 ms</span>
+                <span class="method-start">97272 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.user.GetTests</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">Teardown</span>
-                <span class="method-start">142737 ms</span>
+                <span class="method-start">97275 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.user.PostTests</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">Teardown</span>
+                <span class="method-start">97277 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.user.PutTests</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">Teardown</span>
-                <span class="method-start">142741 ms</span>
+                <span class="method-start">97278 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
